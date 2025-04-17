@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
+
+.notification {
+    position: fixed;
+    width: 400px;
+    right: 0;
+    top: 0;
+    margin-right: 20px;
+    padding: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-family: Poppins, sans-serif;
+    opacity: 1; 
+    visibility: visible;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.notification.show {
+    opacity: 0;
+    visibility: hidden;
+}
+.notification-warning
+{}
+.notification-warning{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: rgba(227, 229, 84, 0.417);
+    color: rgba(233, 206, 0, 1);
+    font-size: smaller;
+    border-radius: 4px;
+    padding: 0 10px;
+    opacity: 70%;
+}
+.notification-warning::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 2px;
+    height: 100%;
+    background: gold;
+}
+
+ .notification-success{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: rgba(129, 253, 129, 0.417);
+    color: rgba(45, 240, 6, 1);
+    font-size: small;
+    border-radius: 4px;
+    padding: 0 10px;
+    opacity: 70%;
+}
+.notification-success::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 2px;
+    height: 100%;
+    background: green;
+}
+.notification-error{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: rgba(220, 104, 104, 0.417);
+    color: rgba(235, 4, 4, 0.7);
+    font-size: smaller;
+    border-radius: 4px;
+    padding: 0 10px;
+    opacity: 70%;
+}
+.notification-error::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 2px;
+    height: 100%;
+    background: red;
+}
+.notfication__wrapright{
+    width: 80%;
+    /* margin-right: 10px; */
+}
+.notfication__wrapleft{
+    width: 20%;
+    align-items: center;
+    /* margin-right: 10px; */
+}
+.notification__icon{
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    margin-top: 13px;
+    background: white;
+}
+.notification__content{
+    width: 100%;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}

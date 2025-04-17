@@ -1,0 +1,16 @@
+{
+  "name": "createlibrary",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "minify":"terser src/my.js -o  notification.min.js &&  csso src/style.css -o style.min.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "csso-cli": "^4.0.2",
+    "terser": "^5.39.0"
+  }
+}

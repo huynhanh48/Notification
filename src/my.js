@@ -45,11 +45,13 @@
                 this._notification.append(this._error);
                 this._notification.addEventListener('transitionend',(e)=>{
                 })
-                setTimeout(() => {
+                setTimeout(()=>{
+                    this._notification.classList.add('show');
                     
-                    this._notification.classList.add("show");
+                },0)
+                this._notification.addEventListener('transitionend',()=>{
                     this.close();
-                },5000);
+                })
 
             }
             return this;
@@ -75,11 +77,15 @@
                 this._notification.append(this._warning);
                 this._notification.addEventListener('transitionend',(e)=>{
                 })
-                setTimeout(() => {
+                setTimeout(()=>{
+                    this._notification.classList.add('show');
                     
-                    this._notification.classList.add("show");
+                },0)
+                this._notification.addEventListener('transitionend',()=>{
                     this.close();
-                },5000);
+                })
+                
+                
 
             }
             return this;
@@ -104,16 +110,19 @@
                 this._notification.append(this._success);
                 this._notification.addEventListener('transitionend',(e)=>{
                 })
-                setTimeout(() => {
+                setTimeout(()=>{
+                    this._notification.classList.add('show');
                     
-                    this._notification.classList.add("show");
+                },0)
+                this._notification.addEventListener('transitionend',()=>{
                     this.close();
-                },5000);
+                })
 
             }
             return this;
         }
     }
+
 
 
 

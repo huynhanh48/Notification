@@ -15,7 +15,7 @@
     font-family: Poppins, sans-serif;
     opacity: 1; 
     visibility: visible;
-    transition: opacity 0.5s ease, visibility 0.5s ease;
+    transition: opacity 5s ease-in-out,visibility 5s ease-in-out;
 }
 
 .notification.show {

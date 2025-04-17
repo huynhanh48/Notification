@@ -1,4 +1,4 @@
-    function  Notification(options={}){
+    function  Nt_alert(options={}){
         this.opt = Object.assign({
             type:'',
             message:''
